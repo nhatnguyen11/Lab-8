@@ -1,3 +1,0 @@
-- dynamic array visualize
-- malloc / calloc which one to use
-- 

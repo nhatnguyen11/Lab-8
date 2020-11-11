@@ -7,13 +7,12 @@ int main(void)
   char direction;
   int choice, rotAmount;
   char *origString=NULL, *encryptedString=NULL, *decryptedString=NULL;
-  char *str[10], str2[10];
- // printf("Enter a string: ");
- // scanf("%s", str2);
-  //fgets(str2, 100, stdin);
+  char *str = NULL, str2[0];
+  printf("Enter a string: ");
+  fgets(str2, 99, stdin);
 
 
-  origString = readString();
+  origString = readString(str2);
   printf("The original string is %s \n", origString);
   
   rotAmount = readAmountToShift();

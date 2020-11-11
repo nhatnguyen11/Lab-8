@@ -22,12 +22,10 @@ void stripCarriageReturn(char* str)
 */
 char * readString(char * str2)
 {
-  char * str= NULL;
-
+  char * str;
   str = (char *)calloc(strlen(str2), sizeof(char));
-  //stripCarriageReturn(str2);
   strncpy(str, str2, strlen(str2) - 1);
-  //printf("%s\n", str);
+  
   return str;
 }// end function
 
@@ -157,13 +155,15 @@ char* encryptString(char* str, int rotAmount, char direction)
 
 char getDirection(char* encryptedString)
 {
-  return 'L';
+  char dir;
+  
+  return dir;
 }// end function
 
 
 int getRotation(char* encryptedString)
 {
-  int rot;
+  int rot = 0 ;
   rot = (int) encryptedString[0] - 65;
   return rot;
 }// end function
